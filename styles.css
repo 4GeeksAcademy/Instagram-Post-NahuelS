@@ -1,0 +1,65 @@
+body{
+    font-family: Roboto, regular;
+    background: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.post{
+    border: 1px solid black;
+    width: 470px;
+    height: auto;
+    box-shadow: 2px 2px 10px #484848;
+}
+
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+   
+}
+
+.post-header img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.post-header div{
+    font-size: 15px
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+}
+
+.post-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+    padding-bottom: 0;
+}
+
+.post-icons .left-icons i {
+    cursor: pointer;
+}
+
+.post-body {
+    padding: 10px;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.fa-solid.fa-heart {
+    color: #ec3e4e; /* Color cuando está "liked" */
+}
+
+.fa-heart {
+    transition: font-size 0.1s ease;
+}
