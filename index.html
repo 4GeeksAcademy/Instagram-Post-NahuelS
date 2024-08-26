@@ -7,6 +7,25 @@
 
 <body>
     <script src="app.js"></script>
+
+    <div class="instructions">
+        <h3>Funciones agregadas</h3>
+        <ul>
+            <li>Dar like</li>
+            <li>Dar like con doble click en la imagen</li>
+            <li>Guardar imagen</li>
+            <li>Abrir imagen en comentarios</li>
+        </ul>
+        <p>Nota: Estas funciones son estéticas se espera que a futuro tengan un cambio real.</p>
+
+        <h3>Agregar a futuro</h3>
+        <ul>
+            <li>Mostrar comentarios</li>
+            <li>Mostrar más publicaciones</li>
+            <li>Publicaciones con fotos, usuarios y comentarios randoms</li>
+        </ul>
+    </div>
+
     <div class="post">
 
         <div class="post-header">
@@ -20,6 +39,10 @@
 
         <div class="post-img">
             <img src="https://international-horizons.com/wp-content/webp-express/webp-images/uploads/2023/06/luca-micheli-r9RW20TrQ0Y-unsplash-1-980x735.jpg.webp" alt="Post Image" class="post-img">
+        
+            <div class="heart-overlay">
+                <i class="fa-solid fa-heart"></i>
+            </div>
         </div>
 
         <div class="post-icons">
@@ -37,6 +60,46 @@
         </div>
         
     </div>
+
+    <div class="modal" id="comment_modal">
+        <div class="modal-content">
+            <i class="fa-solid fa-times close-comment" id="close-comment"></i>
+            <div class="post-expanded">
+                <img src="https://international-horizons.com/wp-content/webp-express/webp-images/uploads/2023/06/luca-micheli-r9RW20TrQ0Y-unsplash-1-980x735.jpg.webp" alt="Post Image Expanded" class="post-img-expanded">
+            </div>
+            <div class="comments-section">
+                <div class="user_post">
+                    <img src="https://cdn-icons-png.flaticon.com/512/152/152843.png" alt="Profile Picture" class="user_avatar">
+                    <div>
+                        <strong>HTML5</strong><br>
+                        Rigoberto
+                    </div>
+                </div>
+                <p><strong>HTML5</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p><strong>4GeeksAcademy</strong> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><strong>Web</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+                <div class="comment-post-icons">
+                    <div class="left-icons">
+                        <i class="fa-regular fa-heart" id="btn_like"></i>
+                        <i class="fa-regular fa-comment" id="btn_comment"></i>
+                        <i class="fa-regular fa-paper-plane" id="btn_share"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark" id="btn_savePost"></i>
+                </div>
+            
+                <div class="write_coment">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <textarea placeholder="Agrega un comentario" class="user_comment"></textarea>
+                    <div class="btn_shareComment" role="button">Publicar</div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     
     <script type="module" src="app.js"></script>
     
